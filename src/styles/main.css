@@ -1,0 +1,132 @@
+/** Begin reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing  : border-box;
+  -moz-box-sizing     : border-box;
+  box-sizing          : border-box;
+}
+h1, h2, h3, h4, h5,h6,p {
+  margin-bottom: 10px;
+}
+ol,ul,dl {
+  list-style-position: inside;
+}
+/** End reset */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/** PostCSS compiles the font-size and font-range tags to allow for responsive typeography */
+html {
+  font-size: responsive 10px 21px;
+  font-range: 420px 1280px;
+}
+.appContainer {
+  margin: auto;
+  max-width: 92.8rem;
+  height: 100%;
+}
+.react-header {
+  position: relative;
+  background-color: RGB(104,108,112);
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  height: 7.5rem;
+  padding: 0;
+  margin: 0;
+}
+.react-map {
+  height: calc(100% - 7.5rem);
+  width: 100%;
+}
+.react-btn-group {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+}
+button {
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.75em;
+  border: 1px solid rgb(104,108,112);
+}
+.react-btn-group button {
+  display: inline-block;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: black;
+}
+#btnNotContacted:disabled {
+  background-color: #cccccc;
+  color: red;
+  cursor: not-allowed;
+}
+#btnContacted:disabled {
+  background-color: #cccccc;
+  color: green;
+  cursor: not-allowed;
+}
+#btnAttempted:disabled {
+  background-color: #cccccc;
+  color: yellow;
+  cursor: not-allowed;
+}
+#btnOther:disabled {
+  background-color: #cccccc;
+  color: blue;
+  cursor: not-allowed;
+}
+.react-btn-group button:not(:last-child) {
+  border-right: none;
+}
+#headerMessage {
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.react-login {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.react-header-msg {
+  padding-top: 0.3rem;
+}
+.svg-inline--fa {
+  font-size: 2rem;
+  padding-left: 0.3rem;
+  float: left;
+}
+.react-event-list {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.react-event-list ul {
+  list-style-type: none;
+}
+.react-event-list button {
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 100%;
+}
